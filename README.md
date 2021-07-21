@@ -1,2 +1,2 @@
 # dotfiles
-![alt text](https://i.imgur.com/cwdkkxS.jpg)
+![alt text](https://i.imgur.com/CBLqnEP.jpg)
