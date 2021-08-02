@@ -24,7 +24,7 @@ set $menu dmenu_path | wofi --show drun -I | xargs swaymsg exec --
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/aqua/Загрузки/pexels-oleg-magni-981364.jpg fill
+output * bg /home/aqua/Загрузки/Telegram Desktop/74.png fill
 #
 # Example configuration:
 #
@@ -83,8 +83,8 @@ output * bg /home/aqua/Загрузки/pexels-oleg-magni-981364.jpg fill
     bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
     bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
     #плеер
-    bindsym --to-code XF86AudioPlay exec playerctl play
-    bindsym --to-code XF86AudioPause exec playerctl pause
+    
+    bindsym XF86AudioPlay exec playerctl play-pause
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
     #скрины 
@@ -95,6 +95,21 @@ output * bg /home/aqua/Загрузки/pexels-oleg-magni-981364.jpg fill
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
     floating_modifier $mod normal
+    bindsym --to-code $mod+l exec swaylock \
+	--screenshots \
+	--clock \
+	--indicator \
+	--indicator-radius 100 \
+	--indicator-thickness 7 \
+	--effect-blur 7x5 \
+	--effect-vignette 0.5:0.5 \
+	--ring-color bb00cc \
+	--key-hl-color 880033 \
+	--line-color 00000000 \
+	--inside-color 00000088 \
+	--separator-color 00000000 \
+	--grace 2 \
+	--fade-in 0.2
 
     # Reload the configuration file
     bindsym  --to-code $mod+Shift+c reload
