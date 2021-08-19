@@ -5,3 +5,6 @@
 
 # bspwm
 !![alt text](https://i.imgur.com/XrHjpVS.jpg)
+
+# For bspwm 
+install https://github.com/adi1090x/polybar-themes
