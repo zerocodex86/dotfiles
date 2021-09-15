@@ -12,3 +12,5 @@ install https://github.com/adi1090x/polybar-themes
 # i3
 !![alt text](https://i.imgur.com/MYwCcaM.jpg)
 
+# i3 2.0
+!![alt text](unixporn.png)
