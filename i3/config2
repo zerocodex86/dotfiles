@@ -196,7 +196,7 @@ exec --no-startup-id setxkbmap -layout us,ru -option "grp:alt_shift_toggle"
 exec_always --no-startup-id bash $HOME/.config/polybar/launch.sh --cuts
 
 #exec_always --no-startup-id feh --bg-scale $HOME/wp/4.jpg
-exec_always --no-startup-id feh --bg-scale $HOME/.cashe/styli.sh/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale $HOME/.cache/styli.sh/wallpaper.jpg
 #exec_always --no-startup-id sh ~/tools/styli.sh/styli.sh # https://github.com/thevinter/styli.sh
 exec_always --no-startup-id picom --blur-method dual_kawase --blur-strength 6 --experimental-backends --backend glx #bg blur
 exec_always --no-startup-id dunst
