@@ -20,4 +20,4 @@ install https://github.com/adi1090x/polybar-themes
 
 # DWM
 
-![Image](2021-09-25-1632580875_1366x768.jpg)
+![Image](2021-09-26-1632642036_1366x768.jpg)
