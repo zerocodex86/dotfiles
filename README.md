@@ -17,3 +17,7 @@ install https://github.com/adi1090x/polybar-themes
 
 # i3 evadgelion ed
 ![alt text](i3v3.png)
+
+# DWM
+
+![Image](2021-09-25-1632580875_1366x768.jpg)
