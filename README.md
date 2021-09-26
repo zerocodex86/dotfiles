@@ -21,3 +21,17 @@ install https://github.com/adi1090x/polybar-themes
 # DWM
 
 ![Image](2021-09-26-1632642036_1366x768.jpg)
+```zsh
+#.xinitrc
+setxkbmap -layout us,ru -option "grp:alt_shift_toggle" & 
+feh --bg-scale /home/ikari/Загрузки/6.jpg &
+#opentabletdriver
+otd &
+#время
+while true; do
+   xsetroot -name "$( date +"%F %R" )"
+   sleep 1m    # Update time every minute
+done &
+
+
+exec dwm
