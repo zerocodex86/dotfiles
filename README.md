@@ -35,3 +35,6 @@ done &
 
 
 exec dwm
+```
+# BSPWM gruvbox 
+![Alt image](gruv.png)
