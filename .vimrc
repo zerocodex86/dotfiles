@@ -1,10 +1,10 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-"=====================================================
-"" Vundle settings
-"=====================================================
-"" set the runtime path to include Vundle and initialize
+	"=====================================================
+	"" Vundle settings
+	"=====================================================
+	"" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -41,7 +41,7 @@ call vundle#end()            		" required
 filetype on
 filetype plugin on
 filetype plugin indent
-
+set paste
 
 colorscheme molokai
 let g:rehash256 = 1
