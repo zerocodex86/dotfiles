@@ -20,7 +20,10 @@ call vundle#begin()
 	Plugin 'rosenfeld/conque-term'      	" Consoles as buffers
 	Plugin 'tpope/vim-surround'	   	" Parentheses, brackets, quotes, XML tags, and more
 	Plugin 'vim-airline/vim-airline-themes'
+	Plugin 'preservim/nerdcommenter'
+	Plugin 'tomasr/molokai'
 	"--------------=== Snippets support ===---------------
+	
 	Plugin 'garbas/vim-snipmate'		" Snippets manager
 	Plugin 'MarcWeber/vim-addon-mw-utils'	" dependencies #1
 	Plugin 'tomtom/tlib_vim'		" dependencies #2
@@ -37,10 +40,11 @@ call vundle#begin()
 call vundle#end()            		" required
 filetype on
 filetype plugin on
-"filetype plugin indent
+filetype plugin indent
 
 
-"colorscheme molokai
+colorscheme molokai
+let g:rehash256 = 1
 syntax on
 set backspace=indent,eol,start
 aunmenu Help.
@@ -172,3 +176,35 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType css setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+
+
+
+
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code
+" indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
